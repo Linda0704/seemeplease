@@ -95,8 +95,8 @@ async function analyzeVideo(object) {
   console.log(`userid ${userid} and videoid ${videoid}`);
   console.log(`Object path: '${object.bucket}/${object.name}'`);
   const request = {
-    inputUri: `gs://${object.bucket}/${object.name}`,
-    outputUri: `gs://${process.env.VIDEO_JSON_BUCKET}/${userid}/${jsonFile}`,
+    inputUri: `gs://seemeplease-35286.appspot.com/videodata/`,
+    outputUri: `gs://seemeplease-35286.appspot.com/jsondata/`,
     features: [
       'LABEL_DETECTION',
       'SHOT_CHANGE_DETECTION',
